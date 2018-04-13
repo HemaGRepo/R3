@@ -9,6 +9,8 @@ pipeline {
     stage('Task2_Build') {
       steps {
         echo 'Building.....'
+        bat 'javac DemoDevOps\\src\\HelloWolrd.java '
+        bat 'java DemoDevOps\\src\\HelloWolrd'
       }
     }
     stage('Task3_Test') {
